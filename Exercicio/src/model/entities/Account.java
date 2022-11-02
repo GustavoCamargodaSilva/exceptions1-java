@@ -55,7 +55,8 @@ public class Account {
 		balance += amount;
 	}
 	
-	public void withDraw(Double amount) {
+	public void withdraw(double amount) {
+		validateWithDraw(amount);
 		balance -= amount;
 	}
 	
